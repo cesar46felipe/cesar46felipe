@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COFFEE CORLEONE</title>
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3e9e1;
+    color: #3c2f2f;
+    margin: 0;
+    text-align: center;
+  }
+  .menu-link {
+    margin: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #6f4e37;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #6f4e37;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .menu-link:hover {
+    background-color: #6f4e37;
+    color: #ffffff;
+  }
+  nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  background-color: #6b4226;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  display: block;
+}
+nav ul li a:hover {
+  background-color: #f7f2ec;
+  color: #6b4226;
+}
+  h1 {
+  font-size: 36px;
+  color: #6b4226;
+}
+h2 {
+  font-size: 28px;
+  color: #a67c52;
+}
+
+</style>
+</head>
+<body>
+  <nav>
+  <ul>
+    <li><a href="#inicio">Início</a></li>
+    <li><a href="#cardapio">Cardápio</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="#historia">Nossa História</a></li>
+  </ul>
+</nav>
+
+ <div class="container"> 
+    <div id="inicio">
+  <h1>Bem-vindo à Coffee Corleone</h1>
+  <p>Desfrute de um café único, em um ambiente acolhedor e sofisticado.</p>
+</div>
+<div id="galeria">
+  <h2>Galeria</h2>
+  <img src="https://bigcupofcoffee.com/wp-content/uploads/2023/05/cafe-latte-recipe-featured.jpg" alt="Café latte" width="200">
+  <img src="https://qtmov.com.br/blog/wp-content/uploads/2023/04/blog-qtmov-cafeteria.jpg" alt="Ambiente da cafeteria" width="200">
+</div>
+
+<div id="contato">
+  <h2>Contato</h2>
+  <form onsubmit="alert('Mensagem enviada com sucesso!'); return false;">
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome" required><br><br>
+  <label for="mensagem">Mensagem:</label><br>
+  <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+  <button type="submit">Enviar</button>
+</form>
+  <p>📍 Rua Fictícia, 123, Centro<br>📞 (11) 1234-5678</p>
+</div>
+
+<div id="historia">
+  <h2>Nossa História</h2>
+  <p>Inspirada na sofisticação italiana, nossa cafeteria é um espaço para amantes do café e boas conversas.</p>
+</div>
+
